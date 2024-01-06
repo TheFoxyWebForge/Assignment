@@ -1,0 +1,64 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignement</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+
+	<div id="main-page">
+    <div class="header">Trip Advisor</div>
+
+	<div class="row">
+		<div class="column">
+			<div id="map"></div>
+		</div>
+		<div class="column">
+			<div id="data-container">
+
+				<div id="card-container">
+					
+				</div>
+
+
+				<div class="pagination" id="pagination">
+					<a href="#" id="prev"><<</a>
+					<a href="#" class="page-link" data-page="1">1</a>
+					<a href="#" class="page-link" data-page="2">2</a>
+					<a href="#" class="page-link" data-page="3">3</a>
+					<a href="#" id="next">>></a>
+					<p id="page-numbers"> </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div id="card-details" style="display: none;">
+		<div class="close-button" onclick="closeCardDetails()">×</div>
+		<div id="container">
+			<div id="left">
+				<h1 id="leftHeading"></h1>
+				<p id="leftDescription"></p>
+				<img src="your-image-url.jpg" alt="Image" id="leftImage">
+			</div>
+			<div id="right">
+				<h2 id="rightHeading"></h2>
+				<p id="rightTitle"></p>
+				<button onclick="buttonClicked()">Reserve</button>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"> </script>
+</body>
+
+</html>
